@@ -3,9 +3,19 @@
 
 body { font-family: "Montserrat", sans-serif; color: #fff; }
 
-.mar-pad-reset, body, #home .home-nav .container--nav .home-nav__list { margin: 0; padding: 0; }
+.margin-padding--reset, body, #home .home-nav .container--nav .home-nav__list { margin: 0; padding: 0; }
 
-.flex-center, #home .container--slogan, #home .container--slogan .dots-wrapper { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; }
+.flex--center, .section-header__wrapper, #about .about-header__wrapper, #home .container--slogan, #home .container--slogan .dots-wrapper { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; }
+
+.brown-button, #home .container--slogan .home-button, #about .about-content__wrapper .wrapper-box .box-button { color: #fff; text-transform: uppercase; font-size: 12px; font-weight: bold; border: none; background: #b88b58; margin: 20px; padding: 15px 50px; border-radius: 20px; }
+
+.brown-button:hover, #home .container--slogan .home-button:hover, #about .about-content__wrapper .wrapper-box .box-button:hover { cursor: pointer; background: #000; transition: 0.6s; }
+
+.section-header__wrapper, #about .about-header__wrapper { text-align: center; padding-top: 50px; }
+
+.section-title, #about .about-header__wrapper .about__title { color: #000; text-transform: uppercase; font-size: 30px; font-weight: bold; line-height: 35px; }
+
+.section-subtitle, #about .about-header__wrapper .about__title--pale { display: block; font-size: 16px; color: #aeaeae; }
 
 .container { max-width: 1200px; margin: 0 auto; }
 
@@ -25,7 +35,7 @@ body { font-family: "Montserrat", sans-serif; color: #fff; }
 
 #home .home-nav .container--nav .home-nav__link { text-decoration: none; text-transform: uppercase; color: #fff; font-weight: bold; }
 
-#home .container--slogan { height: 85vh; -ms-flex-direction: column; flex-direction: column; position: relative; text-align: center; text-transform: uppercase; }
+#home .container--slogan { height: 85%; -ms-flex-direction: column; flex-direction: column; position: relative; text-align: center; text-transform: uppercase; }
 
 #home .container--slogan .home-slogan { margin: 10px; font-size: 4.5rem; line-height: 70px; }
 
@@ -33,10 +43,20 @@ body { font-family: "Montserrat", sans-serif; color: #fff; }
 
 #home .container--slogan .home-subtitle { font-size: 24px; font-weight: 600; margin: 10px; }
 
-#home .container--slogan .home-button { color: #fff; text-transform: uppercase; font-size: 12px; font-weight: bold; border: none; background: #b88b58; margin: 20px; padding: 15px 50px; border-radius: 20px; }
-
-#home .container--slogan .home-button:hover { cursor: pointer; background: #000; transition: 0.6s; }
-
 #home .container--slogan .dots-wrapper { position: absolute; bottom: 0; }
 
 #home .container--slogan .dots-wrapper .dot-element { width: 20px; height: 20px; margin: 10px; border-radius: 50%; border: 2px solid #b88b58; }
+
+#about { min-height: 530px; background: #f7f7f7; }
+
+#about .about-content__wrapper { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: start; align-items: flex-start; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+
+#about .about-content__wrapper .wrapper-box { width: 54%; }
+
+#about .about-content__wrapper .wrapper-box .box-text { color: #000; font-size: 14px; margin: 0; padding: 20px; line-height: 24px; }
+
+#about .about-content__wrapper .wrapper-box .box-button { margin-top: 15px; }
+
+#about .about-content__wrapper .image-wrapper { box-shadow: 0 20px 80px 0 #5a5a5a; }
+
+#about .about-content__wrapper .image-wrapper .video-img { max-height: 275px; width: 100%; vertical-align: middle; }
