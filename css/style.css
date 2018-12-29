@@ -1,13 +1,42 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&subset=latin-ext");
 * { box-sizing: border-box; }
 
-body { margin: 0; padding: 0; }
+body { font-family: "Montserrat", sans-serif; color: #fff; }
 
-#home { background: url("../images/Home-bg.jpg") no-repeat center; background-size: cover; height: 100vh; }
+.mar-pad-reset, body, #home .home-nav .container--nav .home-nav__list { margin: 0; padding: 0; }
+
+.flex-center, #home .container--slogan, #home .container--slogan .dots-wrapper { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; }
 
 .container { max-width: 1200px; margin: 0 auto; }
 
-.container--slogan { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; height: 80vh; }
+#home { background: url("../images/Home-bg.jpg") no-repeat center; background-size: cover; height: 100vh; }
 
-.home-nav__list { display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; -ms-flex-wrap: wrap; flex-wrap: wrap; margin: 0; padding: 0; list-style-type: none; }
+#home .home-nav { background: #000; }
 
-.home-nav__link { text-decoration: none; text-transform: uppercase; color: aquamarine; }
+#home .home-nav .container--nav { display: -ms-flexbox; display: flex; -ms-flex-direction: row; flex-direction: row; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-align: center; align-items: center; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+
+#home .home-nav .container--nav .home-nav__icon { padding: 10px; }
+
+#home .home-nav .container--nav .home-nav__list { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-wrap: wrap; flex-wrap: wrap; list-style-type: none; }
+
+#home .home-nav .container--nav .home-nav__item { position: relative; margin: 10px; }
+
+#home .home-nav .container--nav .home-nav__item:hover::after { content: ""; position: absolute; width: 95%; margin-top: 25px; border: 2px solid #b88b58; display: block; }
+
+#home .home-nav .container--nav .home-nav__link { text-decoration: none; text-transform: uppercase; color: #fff; font-weight: bold; }
+
+#home .container--slogan { height: 85vh; -ms-flex-direction: column; flex-direction: column; position: relative; text-align: center; text-transform: uppercase; }
+
+#home .container--slogan .home-slogan { margin: 10px; font-size: 4.5rem; line-height: 70px; }
+
+#home .container--slogan .home-slogan--color-brown { color: #b88b58; }
+
+#home .container--slogan .home-subtitle { font-size: 24px; font-weight: 600; margin: 10px; }
+
+#home .container--slogan .home-button { color: #fff; text-transform: uppercase; font-size: 12px; font-weight: bold; border: none; background: #b88b58; margin: 20px; padding: 15px 50px; border-radius: 20px; }
+
+#home .container--slogan .home-button:hover { cursor: pointer; background: #000; transition: 0.6s; }
+
+#home .container--slogan .dots-wrapper { position: absolute; bottom: 0; }
+
+#home .container--slogan .dots-wrapper .dot-element { width: 20px; height: 20px; margin: 10px; border-radius: 50%; border: 2px solid #b88b58; }

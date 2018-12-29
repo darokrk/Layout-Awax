@@ -1,16 +1,26 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&subset=latin-ext");
+
 * {
   box-sizing: border-box;
 }
 
 body {
+  @extend .mar-pad-reset;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+}
+
+$brown-color: #b88b58;
+
+.mar-pad-reset {
   margin: 0;
   padding: 0;
 }
 
-#home {
-  background: url("../images/Home-bg.jpg") no-repeat center;
-  background-size: cover;
-  height: 100vh;
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
@@ -18,25 +28,95 @@ body {
   margin: 0 auto;
 }
 
-.container--slogan {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 80vh;
-}
-
-.home-nav__list {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-.home-nav__link {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: aquamarine;
+#home {
+  background: url("../images/Home-bg.jpg") no-repeat center;
+  background-size: cover;
+  height: 100vh;
+  .home-nav {
+    background: #000;
+    .container--nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      .home-nav__icon {
+        padding: 10px;
+      }
+      .home-nav__list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        @extend .mar-pad-reset;
+        list-style-type: none;
+      }
+      .home-nav__item {
+        position: relative;
+        margin: 10px;
+        &:hover::after {
+          content: "";
+          position: absolute;
+          width: 95%;
+          margin-top: 25px;
+          border: 2px solid $brown-color;
+          display: block;
+        }
+      }
+      .home-nav__link {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: bold;
+      }
+    }
+  }
+  .container--slogan {
+    height: 85vh;
+    @extend .flex-center;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    .home-slogan {
+      margin: 10px;
+      font-size: 4.5rem;
+      line-height: 70px;
+    }
+    .home-slogan--color-brown {
+      color: $brown-color;
+    }
+    .home-subtitle {
+      font-size: 24px;
+      font-weight: 600;
+      margin: 10px;
+    }
+    .home-button {
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: bold;
+      border: none;
+      background: $brown-color;
+      margin: 20px;
+      padding: 15px 50px;
+      border-radius: 20px;
+      &:hover {
+        cursor: pointer;
+        background: #000;
+        transition: 0.6s;
+      }
+    }
+    .dots-wrapper {
+      @extend .flex-center;
+      position: absolute;
+      bottom: 0;
+      .dot-element {
+        width: 20px;
+        height: 20px;
+        margin: 10px;
+        border-radius: 50%;
+        border: 2px solid $brown-color;
+      }
+    }
+  }
 }
