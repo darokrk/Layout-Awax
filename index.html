@@ -10,7 +10,7 @@
     <title>Layout awax from PSD</title>
   </head>
   <body>
-    <header id="home">
+    <header id="home" class="home">
       <nav class="home-nav">
         <div class="container container--nav">
           <div class="home-nav__icon">
@@ -48,30 +48,31 @@
         </div>
       </nav>
       <div class="container container--slogan">
-        <h1 class="home-slogan">
+        <h1 class="slogan-header">
           Design is about
-          <span class="home-slogan--color-brown">communication</span>
+          <span class="slogan-header color--brown">communication</span>
         </h1>
-        <p class="home-subtitle">Call us: +00 0 1234 5678</p>
-        <button class="home-button">Get in touch!</button>
-        <div class="dots-wrapper">
-          <div class="dot-element"></div>
-          <div class="dot-element"></div>
-          <div class="dot-element"></div>
-        </div>
+        <p class="slogan-subtitle">Call us: +00 0 1234 5678</p>
+        <button class="button button--brown">Get in touch!</button>
+      </div>
+      <div class="dots-wrapper">
+        <div class="dot-element"></div>
+        <div class="dot-element"></div>
+        <div class="dot-element"></div>
       </div>
     </header>
     <main>
-      <section id="about">
+      <section id="about" class="about">
         <div class="container">
-          <div class="about-header__wrapper">
-            <h2 class="about__title">
-              About us <span class="about__title--pale">who we are?</span>
+          <div class="section-header__wrapper">
+            <h2 class="section-title section-title--black">
+              About us
+              <span class="section-subtitle color--pale">who we are?</span>
             </h2>
           </div>
           <div class="about-content__wrapper">
-            <div class="wrapper-box">
-              <p class="box-text">
+            <div class="about__text-wrapper text-wrapper">
+              <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab eum
                 nobis dicta sit. Eveniet necessitatibus tenetur similique sunt
                 nobis illo obcaecati quos cum maiores officiis, iure nostrum
@@ -83,7 +84,9 @@
                 obcaecati praesentium exercitationem expedita fugiat corrupti
                 architecto unde voluptatum, labore cumque!
               </p>
-              <button class="box-button">Learn more</button>
+              <button class="about__button button button--brown">
+                Learn more
+              </button>
             </div>
             <figure>
               <div class="image-wrapper">
@@ -94,6 +97,62 @@
                 />
               </div>
             </figure>
+          </div>
+        </div>
+      </section>
+      <section id="services" class="services">
+        <div class="container">
+          <div class="section-header__wrapper">
+            <h2 class="section-title">
+              Services
+              <span class="section-subtitle color--pale">
+                services that we provide
+              </span>
+            </h2>
+          </div>
+          <div class="content-wrapper">
+            <div class="content-column">
+              <img src="images/quality-icon.png" alt="quality icon" />
+              <p class="section-subtitle">High quality design</p>
+              <p class="color--pale">
+                Praesent metus urna, feaugiata placerat elementum
+              </p>
+            </div>
+            <div class="content-column">
+              <img src="images/star-icon.png" alt="star icon" />
+              <p class="section-subtitle">Modern design</p>
+              <span class="color--pale">
+                Praesent metus urna, feaugiata placerat elementum
+              </span>
+            </div>
+            <div class="content-column">
+              <img src="images/clock-icon.png" alt="clock icon" />
+              <p class="section-subtitle">Regular updates</p>
+              <span class="color--pale">
+                Praesent metus urna, feaugiata placerat elementum
+              </span>
+            </div>
+            <div class="content-column">
+              <img src="images/support-icon.png" alt="support icon" />
+              <p class="section-subtitle">Fast and free support</p>
+              <span class="color--pale">
+                Praesent metus urna, feaugiata placerat elementum
+              </span>
+            </div>
+            <div class="content-column">
+              <img src="images/gear-icon.png" alt="gear icon" />
+              <p class="section-subtitle">Ready for customize</p>
+              <span class="color--pale">
+                Praesent metus urna, feaugiata placerat elementum
+              </span>
+            </div>
+            <div class="content-column">
+              <img src="images/arrows-icon.png" alt="arrows icon" />
+              <p class="section-subtitle">Adaptive layout</p>
+              <span class="color--pale">
+                Praesent metus urna, feaugiata placerat elementum
+              </span>
+            </div>
           </div>
         </div>
       </section>

@@ -24,14 +24,19 @@ $grey-background: #f7f7f7;
   justify-content: center;
   align-items: center;
 }
+.color--brown {
+  color: $brown-color;
+}
+.color--pale {
+  color: #aeaeae;
+}
 
-.brown-button {
+.button {
   color: #fff;
   text-transform: uppercase;
   font-size: 12px;
   font-weight: bold;
   border: none;
-  background: $brown-color;
   margin: 20px;
   padding: 15px 50px;
   border-radius: 20px;
@@ -40,26 +45,45 @@ $grey-background: #f7f7f7;
     background: #000;
     transition: 0.6s;
   }
+  &:focus {
+    outline: none;
+  }
+}
+
+.button--brown {
+  background: $brown-color;
 }
 
 .section-header__wrapper {
   @extend .flex--center;
   text-align: center;
-  padding-top: 50px;
+  padding-top: 5vh;
 }
 
 .section-title {
-  color: #000;
   text-transform: uppercase;
   font-size: 30px;
   font-weight: bold;
   line-height: 35px;
 }
 
+.section-title--black {
+  color: #000;
+}
+
 .section-subtitle {
   display: block;
   font-size: 16px;
-  color: $pale-color;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.text-wrapper {
+  color: #000;
+  font-size: 14px;
+  margin: 0;
+  padding: 20px;
+  line-height: 24px;
 }
 
 .container {
@@ -67,10 +91,11 @@ $grey-background: #f7f7f7;
   margin: 0 auto;
 }
 
-#home {
+.home {
   background: url("../images/Home-bg.jpg") no-repeat center;
   background-size: cover;
   height: 100vh;
+  position: relative;
   .home-nav {
     background: #000;
     .container--nav {
@@ -92,13 +117,18 @@ $grey-background: #f7f7f7;
       .home-nav__item {
         position: relative;
         margin: 10px;
-        &:hover::after {
+        &::after {
           content: "";
           position: absolute;
           width: 95%;
           margin-top: 25px;
           border: 2px solid $brown-color;
           display: block;
+          transition: opacity 0.4s ease;
+          opacity: 0;
+        }
+        &:hover::after {
+          opacity: 1;
         }
       }
       .home-nav__link {
@@ -110,72 +140,52 @@ $grey-background: #f7f7f7;
     }
   }
   .container--slogan {
-    height: 85%;
-    @extend .flex--center;
-    flex-direction: column;
-    position: relative;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
     text-transform: uppercase;
-    .home-slogan {
+    .slogan-header {
       margin: 10px;
       font-size: 4.5rem;
       line-height: 70px;
     }
-    .home-slogan--color-brown {
-      color: $brown-color;
-    }
-    .home-subtitle {
+    .slogan-subtitle {
       font-size: 24px;
       font-weight: 600;
       margin: 10px;
     }
-    .home-button {
-      @extend .brown-button;
-    }
-    .dots-wrapper {
-      @extend .flex--center;
-      position: absolute;
-      bottom: 0;
-      .dot-element {
-        width: 20px;
-        height: 20px;
-        margin: 10px;
-        border-radius: 50%;
-        border: 2px solid $brown-color;
-      }
+  }
+  .dots-wrapper {
+    display: flex;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .dot-element {
+      width: 20px;
+      height: 20px;
+      margin: 10px;
+      border-radius: 50%;
+      border: 2px solid $brown-color;
     }
   }
 }
-#about {
+
+.about {
   min-height: 530px;
   background: $grey-background;
-  .about-header__wrapper {
-    @extend .section-header__wrapper;
-    .about__title {
-      @extend .section-title;
-    }
-    .about__title--pale {
-      @extend .section-subtitle;
-    }
-  }
   .about-content__wrapper {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
-    .wrapper-box {
+    .about__text-wrapper {
       width: 54%;
-      .box-text {
-        color: #000;
-        font-size: 14px;
-        margin: 0;
-        padding: 20px;
-        line-height: 24px;
-      }
-      .box-button {
-        @extend .brown-button;
-        margin-top: 15px;
-      }
+    }
+    .about__button {
+      margin-left: 0;
     }
     .image-wrapper {
       box-shadow: 0 20px 80px 0 #5a5a5a;
@@ -184,6 +194,22 @@ $grey-background: #f7f7f7;
         width: 100%;
         vertical-align: middle;
       }
+    }
+  }
+}
+
+.services {
+  min-height: 415px;
+  background: #000;
+  .content-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .content-column {
+      max-width: 200px;
+      align-self: baseline;
+      text-align: center;
+      padding: 20px;
     }
   }
 }
