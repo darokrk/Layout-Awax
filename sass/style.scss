@@ -58,7 +58,6 @@ $grey-background: #f7f7f7;
 .section-header__wrapper {
   @extend .flex--center;
   text-align: center;
-  padding-top: 5vh;
 }
 
 .section-title {
@@ -68,13 +67,13 @@ $grey-background: #f7f7f7;
   line-height: 35px;
 }
 
-.section-title--black {
+.color--black {
   color: #000;
 }
 
 .section-subtitle {
   display: block;
-  font-size: 16px;
+  font-size: 14px;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -90,6 +89,7 @@ $grey-background: #f7f7f7;
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 5vh 0;
 }
 
 .home {
@@ -105,6 +105,7 @@ $grey-background: #f7f7f7;
       justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
+      padding: 0;
       .home-nav__icon {
         padding: 10px;
       }
@@ -204,16 +205,19 @@ $grey-background: #f7f7f7;
     justify-content: center;
     flex-wrap: wrap;
     .content-column {
-      max-width: 200px;
+      flex: 1;
       align-self: baseline;
       text-align: center;
       padding: 20px;
+      .services-subtitle {
+        font-size: 16px;
+      }
     }
   }
 }
 
 .projects {
-  max-height: 950px;
+  min-height: 950px;
   .projects-menu__wrapper {
     display: flex;
     justify-content: space-evenly;
@@ -288,5 +292,45 @@ $grey-background: #f7f7f7;
     background: #000;
     opacity: 0.8;
     font-size: 14px;
+  }
+}
+
+.team {
+  min-height: 700px;
+  background: url("../images/OurTeam-bg-.jpg") no-repeat center;
+  background-size: cover;
+  .team-content__wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .team-content__column {
+    background: #fff;
+    padding: 5vh;
+    text-align: center;
+    .column-header {
+      text-transform: uppercase;
+      margin-top: 20px;
+      margin-bottom: 5px;
+    }
+    .column-icon__wrapper {
+      display: flex;
+      justify-content: space-around;
+      padding-top: 20px;
+      .icon {
+        width: 30px;
+        height: 30px;
+        background: #bebebe;
+        color: #fff;
+        text-decoration: none;
+        padding: 5px;
+        margin: 5px;
+        border-radius: 50%;
+        &:hover {
+          background: #b88b58;
+          transition: 0.6s;
+        }
+      }
+    }
   }
 }
