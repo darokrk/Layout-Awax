@@ -19,6 +19,14 @@ body, figure { margin: 0; padding: 0; }
 
 .button--brown { background: #b88b58; }
 
+.content-wrapper { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+
+.dots-wrapper { display: -ms-flexbox; display: flex; margin: 20px; }
+
+.dots-wrapper .dot-element { width: 15px; height: 15px; margin: 5px; border-radius: 50%; border: 2px solid #b88b58; }
+
+.dots-wrapper .dot-element:hover { cursor: pointer; background: #b88b58; transition: 0.6s; }
+
 .section-header__wrapper { text-align: center; }
 
 .section-title { text-transform: uppercase; font-size: 30px; font-weight: bold; line-height: 35px; }
@@ -73,11 +81,9 @@ body, figure { margin: 0; padding: 0; }
 
 .services { min-height: 415px; background: #000; }
 
-.services .content-wrapper { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+.services .content-column { -ms-flex: 1; flex: 1; -ms-flex-item-align: baseline; align-self: baseline; text-align: center; padding: 20px; }
 
-.services .content-wrapper .content-column { -ms-flex: 1; flex: 1; -ms-flex-item-align: baseline; align-self: baseline; text-align: center; padding: 20px; }
-
-.services .content-wrapper .content-column .services-subtitle { font-size: 16px; }
+.services .content-column .services-subtitle { font-size: 16px; }
 
 .projects { min-height: 950px; }
 
@@ -116,3 +122,17 @@ body, figure { margin: 0; padding: 0; }
 .team .team-content__column .column-icon__wrapper .icon { width: 30px; height: 30px; background: #bebebe; color: #fff; text-decoration: none; padding: 5px; margin: 5px; border-radius: 50%; }
 
 .team .team-content__column .column-icon__wrapper .icon:hover { background: #b88b58; transition: 0.6s; }
+
+.clients-wrapper { -ms-flex-direction: column; flex-direction: column; text-align: center; -ms-flex-align: center; align-items: center; }
+
+.clients-wrapper .clients-image__title { font-weight: bold; font-size: 24px; margin-bottom: 10px; }
+
+.clients-wrapper .clients-image__subtitle { font-weight: bold; font-size: 18px; }
+
+.clients-text { width: 80%; line-height: 30px; }
+
+.clients-text::before { content: ",,"; height: 60px; display: inherit; font-size: 60px; font-family: "Noto Serif", serif; color: #7e7e7e; font-weight: bold; transform: rotate(180deg); }
+
+.logos { background: #fff; }
+
+.logos .logos-wrapper { display: -ms-flexbox; display: flex; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-align: center; align-items: center; -ms-flex-wrap: wrap; flex-wrap: wrap; }
