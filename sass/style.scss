@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700&subset=latin-ext");
 
 * {
   box-sizing: border-box;
@@ -322,10 +322,8 @@ $grey-background: #f7f7f7;
   min-height: 700px;
   background: url("../images/OurTeam-bg-.jpg") no-repeat center;
   background-size: cover;
-  .team-content__wrapper {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+  .team-wrapper {
+    justify-content: space-between;
   }
   .team-content__column {
     background: #fff;
@@ -394,5 +392,45 @@ $grey-background: #f7f7f7;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+  }
+}
+
+.price {
+  .price-wrapper {
+    justify-content: space-between;
+  }
+  .price-column {
+    flex-direction: column;
+    margin: 20px;
+    padding: 30px;
+    background: #fff;
+    .column-title {
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+    .column-subtitle {
+      margin-top: 0;
+      text-transform: uppercase;
+      font-size: 10px;
+    }
+    .column-price {
+      font-size: 30px;
+      font-weight: bold;
+      margin: 0;
+    }
+    .column-text {
+      position: relative;
+      font-size: 12px;
+      color: #7e7e7e;
+      margin: 0;
+      &::after {
+        content: "";
+        display: block;
+        width: 10px;
+        margin: 10px auto;
+        border: 1px solid;
+        opacity: 0.8;
+      }
+    }
   }
 }
