@@ -97,6 +97,21 @@ $grey-background: #f7f7f7;
   line-height: 35px;
 }
 
+.icon {
+  width: 30px;
+  height: 30px;
+  background: #bebebe;
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 50%;
+  &:hover {
+    background: #b88b58;
+    transition: 0.6s;
+  }
+}
+
 .color--black {
   color: #000;
 }
@@ -337,20 +352,6 @@ $grey-background: #f7f7f7;
       display: flex;
       justify-content: space-around;
       padding-top: 20px;
-      .icon {
-        width: 30px;
-        height: 30px;
-        background: #bebebe;
-        color: #fff;
-        text-decoration: none;
-        padding: 5px;
-        margin: 5px;
-        border-radius: 50%;
-        &:hover {
-          background: #b88b58;
-          transition: 0.6s;
-        }
-      }
     }
   }
 }
@@ -503,5 +504,42 @@ $grey-background: #f7f7f7;
   }
   .facts-column {
     max-width: 255px;
+  }
+}
+
+.share {
+  color: black;
+  .share-wrapper {
+    flex-wrap: wrap;
+  }
+  .share-text {
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 0 20px;
+  }
+  .share-icon__wrapper {
+    flex-wrap: wrap;
+  }
+  .icon-text {
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .icon-twitter {
+    background: #6dd5f4;
+  }
+  .icon-linkedin {
+    background: #127cb4;
+  }
+  .icon-facebook {
+    background: #336297;
+  }
+  .icon-google {
+    background: #e74237;
+  }
+  .icon-pinterest {
+    background: #b71c29;
+  }
+  .icon-box {
+    padding: 0 20px;
   }
 }
