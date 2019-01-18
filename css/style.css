@@ -181,13 +181,15 @@ body, figure { margin: 0; padding: 0; }
 
 .facts .facts-column { max-width: 255px; }
 
-.share { color: black; }
+.share { color: black; border-bottom: 1px solid #bebebe; }
+
+.share .container--share { padding: 0; }
 
 .share .share-wrapper { -ms-flex-wrap: wrap; flex-wrap: wrap; }
 
 .share .share-text { text-transform: uppercase; font-weight: 600; padding: 0 20px; }
 
-.share .share-icon__wrapper { -ms-flex-wrap: wrap; flex-wrap: wrap; }
+.share .share-icon__wrapper { -ms-flex-wrap: wrap; flex-wrap: wrap; padding: 20px; }
 
 .share .icon-text { font-size: 12px; font-weight: 600; }
 
@@ -202,3 +204,19 @@ body, figure { margin: 0; padding: 0; }
 .share .icon-pinterest { background: #b71c29; }
 
 .share .icon-box { padding: 0 20px; }
+
+.contact .message-wrapper { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-align: center; align-items: center; max-width: 540px; margin: 0 auto; }
+
+.contact .message-form { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-align: center; align-items: center; width: 100%; text-transform: uppercase; font-size: 13px; }
+
+.contact .form-label { width: 80%; padding: 10px; }
+
+.contact .form-input { width: 75%; border: none; border-bottom: 1px solid #aeaeae; background: inherit; text-align: center; }
+
+.contact .form-input:focus { outline: none; border-color: #000; }
+
+.contact .map-container { position: relative; }
+
+.contact .map-box { position: absolute; width: 30%; border: 1px solid; height: 200px; top: 20%; left: 20%; background: #fff; }
+
+.contact .map--black-white { filter: grayscale(100%); }
