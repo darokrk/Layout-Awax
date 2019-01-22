@@ -234,3 +234,30 @@ body { font-family: "Montserrat", sans-serif; color: #fff; background: #f7f7f7; 
 .footer .footer__wrapper .footer__box .box__email .email__text::after { content: ""; display: block; width: inherit; margin: 10px auto; border: 1px solid; opacity: 0.8; }
 
 .footer .footer__wrapper .box--text { font-size: 12px; line-height: 21px; }
+
+@media (max-width: 767px) { .section__title { font-size: 26px; }
+  .clients__wrapper { padding: 20px 0; font-size: 14px; }
+  .content__wrapper { -ms-flex-pack: center; justify-content: center; }
+  .content__column { width: 100%; margin: 20px; padding: 20px; }
+  .home .home-nav .container__nav .main__mobile { z-index: 1; padding: 20px; }
+  .home .home-nav .container__nav .main__mobile .mobile__icon-1, .home .home-nav .container__nav .main__mobile .mobile__icon-2, .home .home-nav .container__nav .main__mobile .mobile__icon-3 { width: 35px; height: 4px; background-color: #fff; margin: 6px 0; transition: 0.4s; }
+  .home .home-nav .container__nav .home-nav__list { display: none; }
+  .home .container__slogan .slogan__header { font-size: 1.9rem; line-height: 40px; }
+  .home .container__slogan .slogan__subtitle { font-size: 20px; }
+  .home .home-dots__wrapper { left: 50%; transform: translate(-50%, -50%); }
+  .about .about__text-wrapper { text-align: center; padding: 0 20px; }
+  .services .services__column { max-width: 100%; }
+  .projects .projects-menu__element { -ms-flex: none; flex: none; width: 50%; }
+  .projects .projects-menu__element:first-child { border-radius: 0; }
+  .projects .projects-menu__element:last-child { border-radius: 0; }
+  .services__column .premium .premium-image__wrapper .premium__image { width: 100%; }
+  .price .price__column { width: 100%; }
+  .price .price__column .column__subtitle { font-size: 12px; }
+  .price .price__column .column__text { font-size: 14px; }
+  .premium__image { width: 100%; }
+  .premium .premium-content__wrapper { padding: 0; }
+  .premium .premium-text__box { margin: 20px 0; padding: 0; }
+  .premium .box-text__wrapper { font-size: 14px; }
+  .share .share-icon__wrapper { padding: 20px 0 40px; }
+  .share .share-text__wrapper { font-size: 18px; padding: 20px; }
+  .footer .footer__wrapper .footer__box { width: 100%; -ms-flex-pack: distribute; justify-content: space-around; -ms-flex-align: center; align-items: center; margin: 20px; text-align: center; } }
