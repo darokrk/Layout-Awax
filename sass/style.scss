@@ -807,8 +807,12 @@ body {
     min-height: 400px;
 
     .home-nav .container__nav {
-      .main__mobile {
-        z-index: 1;
+      .home-nav__logo {
+        z-index: 2;
+      }
+
+      .mobile__wrapper {
+        z-index: 2;
         padding: 20px;
 
         .mobile__icon-1,
@@ -824,6 +828,40 @@ body {
 
       .home-nav__list {
         display: none;
+      }
+
+      .active .mobile__icon-1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
+      }
+
+      .active .mobile__icon-2 {
+        opacity: 0;
+      }
+
+      .active .mobile__icon-3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
+      }
+
+      .active__menu {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.9);
+        z-index: 1;
+        display: inherit;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 22px;
+
+        .home-nav__item {
+          &::after {
+            border: none;
+          }
+        }
       }
     }
 
@@ -972,8 +1010,18 @@ body {
 
   .home {
     .home-nav .container__nav {
-      .main__mobile {
-        z-index: 1;
+      .home-nav__logo {
+        z-index: 2;
+        padding: 10px 20px;
+
+        .logo__image {
+          width: 70px;
+          height: 70px;
+        }
+      }
+
+      .mobile__wrapper {
+        z-index: 2;
         padding: 20px;
 
         .mobile__icon-1,
@@ -989,6 +1037,40 @@ body {
 
       .home-nav__list {
         display: none;
+      }
+
+      .active .mobile__icon-1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
+      }
+
+      .active .mobile__icon-2 {
+        opacity: 0;
+      }
+
+      .active .mobile__icon-3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
+      }
+
+      .active__menu {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.9);
+        z-index: 1;
+        display: inherit;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 36px;
+
+        .home-nav__item {
+          &::after {
+            border: none;
+          }
+        }
       }
     }
   }
