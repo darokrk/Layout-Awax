@@ -218,7 +218,7 @@ body {
     position: absolute;
     bottom: 5%;
     left: 50%;
-    transform: translate(-41%, -50%);
+    transform: translate(-50%, -50%);
 
     .home-dot__element {
       width: 20px;
@@ -226,6 +226,12 @@ body {
       margin: 10px;
       border-radius: 50%;
       border: 2px solid #b88b58;
+
+      &:hover {
+        cursor: pointer;
+        background: #b88b58;
+        transition: 0.6s;
+      }
     }
   }
 }
@@ -747,6 +753,36 @@ body {
   }
 }
 
+/* iPhoneX */
+
+@media (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  .home {
+    min-height: 400px;
+
+    .container__slogan {
+      .slogan__header {
+        font-size: 32px;
+        line-height: 50px;
+      }
+
+      .slogan__subtitle {
+        font-size: 20px;
+      }
+
+      .button {
+        font-size: 12px;
+      }
+    }
+
+    .home-dots__wrapper {
+      .home-dot__element {
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+}
+
 @media (max-width: 767px) {
   .section__title {
     font-size: 26px;
@@ -768,6 +804,8 @@ body {
   }
 
   .home {
+    min-height: 400px;
+
     .home-nav .container__nav {
       .main__mobile {
         z-index: 1;
@@ -783,6 +821,7 @@ body {
           transition: 0.4s;
         }
       }
+
       .home-nav__list {
         display: none;
       }
@@ -790,7 +829,7 @@ body {
 
     .container__slogan {
       .slogan__header {
-        font-size: 1.9rem;
+        font-size: 1.85rem;
         line-height: 40px;
       }
 
@@ -830,6 +869,12 @@ body {
       &:last-child {
         border-radius: 0;
       }
+    }
+  }
+
+  .team {
+    .team__column {
+      max-width: 320px;
     }
   }
 
@@ -893,6 +938,162 @@ body {
         align-items: center;
         margin: 20px;
         text-align: center;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .button {
+    font-size: 16px;
+  }
+
+  .section__title {
+    font-size: 34px;
+  }
+
+  .section__subtitle {
+    font-size: 18px;
+  }
+
+  .content__wrapper {
+    justify-content: space-around;
+  }
+
+  .content__column {
+    font-size: 16px;
+    padding: 20px;
+  }
+
+  .home {
+    .home-nav .container__nav {
+      .main__mobile {
+        z-index: 1;
+        padding: 20px;
+
+        .mobile__icon-1,
+        .mobile__icon-2,
+        .mobile__icon-3 {
+          width: 35px;
+          height: 4px;
+          background-color: #fff;
+          margin: 6px 0;
+          transition: 0.4s;
+        }
+      }
+
+      .home-nav__list {
+        display: none;
+      }
+    }
+  }
+
+  .about {
+    .about__text-wrapper {
+      font-size: 16px;
+      text-align: center;
+    }
+  }
+
+  .services {
+    .services__column {
+      max-width: 30%;
+      padding: 20px;
+    }
+  }
+
+  .team {
+    .team__column {
+      font-size: 18px;
+    }
+  }
+
+  .clients__text {
+    font-size: 18px;
+  }
+
+  .price {
+    .price__column {
+      width: 40%;
+
+      .column__title {
+        font-size: 20px;
+      }
+
+      .column__subtitle {
+        font-size: 14px;
+      }
+
+      .column__text {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .premium {
+    .premium-content__wrapper {
+      min-height: 430px;
+      justify-content: space-between;
+      font-size: 18px;
+    }
+
+    .box-text__title {
+      font-size: 22px;
+    }
+
+    .box-text__feature {
+      font-size: 16px;
+    }
+  }
+
+  .facts {
+    .facts--column {
+      max-width: 380px;
+    }
+
+    .facts--title {
+      font-size: 20px;
+    }
+  }
+
+  .share {
+    .share__slogan {
+      font-size: 18px;
+    }
+
+    .icon-box__number {
+      font-size: 14px;
+    }
+  }
+
+  .footer {
+    .footer__wrapper {
+      flex-direction: column;
+      text-align: center;
+
+      .footer__box {
+        width: 50%;
+        min-height: 200px;
+        height: auto;
+        align-items: center;
+        padding: 20px;
+
+        .footer__span {
+          font-size: 18px;
+        }
+
+        &:last-child {
+          justify-content: center;
+        }
+      }
+
+      .box--text {
+        font-size: 16px;
       }
     }
   }

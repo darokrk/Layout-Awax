@@ -67,9 +67,11 @@ body { font-family: "Montserrat", sans-serif; color: #fff; background: #f7f7f7; 
 
 .home .container__slogan .slogan__subtitle { font-size: 24px; font-weight: 600; margin: 10px; }
 
-.home .home-dots__wrapper { display: -ms-flexbox; display: flex; position: absolute; bottom: 5%; left: 50%; transform: translate(-41%, -50%); }
+.home .home-dots__wrapper { display: -ms-flexbox; display: flex; position: absolute; bottom: 5%; left: 50%; transform: translate(-50%, -50%); }
 
 .home .home-dots__wrapper .home-dot__element { width: 20px; height: 20px; margin: 10px; border-radius: 50%; border: 2px solid #b88b58; }
+
+.home .home-dots__wrapper .home-dot__element:hover { cursor: pointer; background: #b88b58; transition: 0.6s; }
 
 .about { min-height: 530px; }
 
@@ -235,14 +237,22 @@ body { font-family: "Montserrat", sans-serif; color: #fff; background: #f7f7f7; 
 
 .footer .footer__wrapper .box--text { font-size: 12px; line-height: 21px; }
 
+/* iPhoneX */
+@media (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) { .home { min-height: 400px; }
+  .home .container__slogan .slogan__header { font-size: 32px; line-height: 50px; }
+  .home .container__slogan .slogan__subtitle { font-size: 20px; }
+  .home .container__slogan .button { font-size: 12px; }
+  .home .home-dots__wrapper .home-dot__element { width: 15px; height: 15px; } }
+
 @media (max-width: 767px) { .section__title { font-size: 26px; }
   .clients__wrapper { padding: 20px 0; font-size: 14px; }
   .content__wrapper { -ms-flex-pack: center; justify-content: center; }
   .content__column { width: 100%; margin: 20px; padding: 20px; }
+  .home { min-height: 400px; }
   .home .home-nav .container__nav .main__mobile { z-index: 1; padding: 20px; }
   .home .home-nav .container__nav .main__mobile .mobile__icon-1, .home .home-nav .container__nav .main__mobile .mobile__icon-2, .home .home-nav .container__nav .main__mobile .mobile__icon-3 { width: 35px; height: 4px; background-color: #fff; margin: 6px 0; transition: 0.4s; }
   .home .home-nav .container__nav .home-nav__list { display: none; }
-  .home .container__slogan .slogan__header { font-size: 1.9rem; line-height: 40px; }
+  .home .container__slogan .slogan__header { font-size: 1.85rem; line-height: 40px; }
   .home .container__slogan .slogan__subtitle { font-size: 20px; }
   .home .home-dots__wrapper { left: 50%; transform: translate(-50%, -50%); }
   .about .about__text-wrapper { text-align: center; padding: 0 20px; }
@@ -250,6 +260,7 @@ body { font-family: "Montserrat", sans-serif; color: #fff; background: #f7f7f7; 
   .projects .projects-menu__element { -ms-flex: none; flex: none; width: 50%; }
   .projects .projects-menu__element:first-child { border-radius: 0; }
   .projects .projects-menu__element:last-child { border-radius: 0; }
+  .team .team__column { max-width: 320px; }
   .services__column .premium .premium-image__wrapper .premium__image { width: 100%; }
   .price .price__column { width: 100%; }
   .price .price__column .column__subtitle { font-size: 12px; }
@@ -261,3 +272,33 @@ body { font-family: "Montserrat", sans-serif; color: #fff; background: #f7f7f7; 
   .share .share-icon__wrapper { padding: 20px 0 40px; }
   .share .share-text__wrapper { font-size: 18px; padding: 20px; }
   .footer .footer__wrapper .footer__box { width: 100%; -ms-flex-pack: distribute; justify-content: space-around; -ms-flex-align: center; align-items: center; margin: 20px; text-align: center; } }
+
+@media (min-width: 768px) and (max-width: 1024px) { .icon { width: 40px; height: 40px; }
+  .button { font-size: 16px; }
+  .section__title { font-size: 34px; }
+  .section__subtitle { font-size: 18px; }
+  .content__wrapper { -ms-flex-pack: distribute; justify-content: space-around; }
+  .content__column { font-size: 16px; padding: 20px; }
+  .home .home-nav .container__nav .main__mobile { z-index: 1; padding: 20px; }
+  .home .home-nav .container__nav .main__mobile .mobile__icon-1, .home .home-nav .container__nav .main__mobile .mobile__icon-2, .home .home-nav .container__nav .main__mobile .mobile__icon-3 { width: 35px; height: 4px; background-color: #fff; margin: 6px 0; transition: 0.4s; }
+  .home .home-nav .container__nav .home-nav__list { display: none; }
+  .about .about__text-wrapper { font-size: 16px; text-align: center; }
+  .services .services__column { max-width: 30%; padding: 20px; }
+  .team .team__column { font-size: 18px; }
+  .clients__text { font-size: 18px; }
+  .price .price__column { width: 40%; }
+  .price .price__column .column__title { font-size: 20px; }
+  .price .price__column .column__subtitle { font-size: 14px; }
+  .price .price__column .column__text { font-size: 16px; }
+  .premium .premium-content__wrapper { min-height: 430px; -ms-flex-pack: justify; justify-content: space-between; font-size: 18px; }
+  .premium .box-text__title { font-size: 22px; }
+  .premium .box-text__feature { font-size: 16px; }
+  .facts .facts--column { max-width: 380px; }
+  .facts .facts--title { font-size: 20px; }
+  .share .share__slogan { font-size: 18px; }
+  .share .icon-box__number { font-size: 14px; }
+  .footer .footer__wrapper { -ms-flex-direction: column; flex-direction: column; text-align: center; }
+  .footer .footer__wrapper .footer__box { width: 50%; min-height: 200px; height: auto; -ms-flex-align: center; align-items: center; padding: 20px; }
+  .footer .footer__wrapper .footer__box .footer__span { font-size: 18px; }
+  .footer .footer__wrapper .footer__box:last-child { -ms-flex-pack: center; justify-content: center; }
+  .footer .footer__wrapper .box--text { font-size: 16px; } }
