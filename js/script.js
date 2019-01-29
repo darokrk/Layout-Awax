@@ -13,11 +13,11 @@ document.addEventListener("DOMContentLoaded", () => {
     anchor.addEventListener('click', function (e) {
       e.preventDefault();
 
+      navBtn.classList.toggle('active');
+      navMenu.classList.toggle('active__menu');
       document.querySelector(this.getAttribute('href')).scrollIntoView({
         behavior: 'smooth'
       });
-      navBtn.classList.toggle('active');
-      navMenu.classList.toggle('active__menu');
     });
   });
 

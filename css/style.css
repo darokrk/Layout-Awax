@@ -268,7 +268,7 @@ body { font-family: "Montserrat", sans-serif; color: #fff; background: #f7f7f7; 
   .projects .projects-menu__element { -ms-flex: none; flex: none; width: 50%; }
   .projects .projects-menu__element:first-child { border-radius: 0; }
   .projects .projects-menu__element:last-child { border-radius: 0; }
-  .team .team__column { max-width: 320px; }
+  .team .team__column { max-width: 340px; }
   .services__column .premium .premium-image__wrapper .premium__image { width: 100%; }
   .price .price__column { width: 100%; }
   .price .price__column .column__subtitle { font-size: 12px; }
