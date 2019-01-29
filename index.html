@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
     crossorigin="anonymous" />
+  <link rel="stylesheet" href="/node_modules/bxslider/dist/jquery.bxslider.css">
   <link rel="stylesheet" href="css/style.css" />
 
   <title>Layout Awax from PSD</title>
@@ -62,11 +63,6 @@
       </h1>
       <p class="slogan__subtitle">Call us: +00 0 1234 5678</p>
       <button class="button button--brown">Get in touch!</button>
-    </div>
-    <div class="home-dots__wrapper">
-      <div class="home-dot__element"></div>
-      <div class="home-dot__element"></div>
-      <div class="home-dot__element"></div>
     </div>
   </header>
   <main>
@@ -390,21 +386,42 @@
             <span class="section__subtitle color--pale">client reviews</span>
           </h2>
         </div>
-        <div class="clients__wrapper color--black">
-          <img src="images/clients-person-1.png" alt="" />
-          <h3 class="clients__title">John Doe</h3>
-          <span class="clients__subtitle">Head of PR Departament</span>
-          <p class="clients__text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-            quod rem, dolores itaque eum dignissimos beatae autem iure id odit
-            quidem unde sapiente dolorum quia animi! Sit placeat provident
-            asperiores, explicabo facilis eum aspernatur eaque optio, veniam
-            consequuntur deserunt quis!
-          </p>
-          <div class="dots__wrapper">
-            <div class="dot__element"></div>
-            <div class="dot__element"></div>
-            <div class="dot__element"></div>
+        <div class="carousel__wrapper">
+          <div class="clients__wrapper color--black">
+            <img src="images/clients-person-1.png" alt="" />
+            <h3 class="clients__title">John Doe</h3>
+            <span class="clients__subtitle">Head of PR Departament</span>
+            <p class="clients__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+              quod rem, dolores itaque eum dignissimos beatae autem iure id odit
+              quidem unde sapiente dolorum quia animi! Sit placeat provident
+              asperiores, explicabo facilis eum aspernatur eaque optio, veniam
+              consequuntur deserunt quis!
+            </p>
+          </div>
+          <div class="clients__wrapper color--black">
+            <img src="images/clients-person-1.png" alt="" />
+            <h3 class="clients__title">Frank Lampart</h3>
+            <span class="clients__subtitle">HR Departament</span>
+            <p class="clients__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+              quod rem, dolores itaque eum dignissimos beatae autem iure id odit
+              quidem unde sapiente dolorum quia animi! Sit placeat provident
+              asperiores, explicabo facilis eum aspernatur eaque optio, veniam
+              consequuntur deserunt quis!
+            </p>
+          </div>
+          <div class="clients__wrapper color--black">
+            <img src="images/clients-person-1.png" alt="" />
+            <h3 class="clients__title">John Terry</h3>
+            <span class="clients__subtitle">Head of Security</span>
+            <p class="clients__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+              quod rem, dolores itaque eum dignissimos beatae autem iure id odit
+              quidem unde sapiente dolorum quia animi! Sit placeat provident
+              asperiores, explicabo facilis eum aspernatur eaque optio, veniam
+              consequuntur deserunt quis!
+            </p>
           </div>
         </div>
       </div>
@@ -485,56 +502,141 @@
             <span class="section__subtitle color--pale">even more features available</span>
           </h2>
         </div>
-        <div class="content__wrapper">
-          <div class="premium-image__wrapper">
-            <img class="premium__image" src="./images/premium-boxes.png" alt="" />
+        <div class="carousel__wrapper">
+          <div class="content__wrapper">
+            <div class="premium-image__wrapper">
+              <img class="premium__image" src="./images/premium-boxes.png" alt="" />
+            </div>
+            <div class="premium-content__wrapper color--pale">
+              <div class="premium-text__box">
+                <div class="box-icon__wrapper">
+                  <img src="./images/premium-icon.png" alt="" />
+                </div>
+                <div class="box-text__wrapper">
+                  <h3 class="box-text__title">First feature</h3>
+                  <p>
+                    Praesent metus urna, feugiat a placerat vel, elementum at
+                    leo.
+                  </p>
+                  <p>Quisque vel fermentum ipsum. Nulla at facilisis est.</p>
+                  <p class="box-text__feature">- feature one</p>
+                  <p class="box-text__feature">- feature two</p>
+                  <p class="box-text__feature">- feature three</p>
+                </div>
+              </div>
+              <div class="premium-text__box">
+                <div class="box-icon__wrapper">
+                  <img src="./images/premium-icon.png" alt="" />
+                </div>
+                <div class="box-text__wrapper">
+                  <h3 class="box-text__title">Second feature</h3>
+                  <p>Praesent metus urna, feugiat a placerat vel</p>
+                </div>
+              </div>
+              <div class="premium-text__box">
+                <div class="box-icon__wrapper">
+                  <img src="./images/premium-icon.png" alt="" />
+                </div>
+                <div class="box-text__wrapper">
+                  <h3 class="box-text__title">Third feature</h3>
+                  <p>
+                    Praesent metus urna, feugiat a placerat vel, elementum at
+                    leo.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="premium-content__wrapper color--pale">
-            <div class="premium-text__box">
-              <div class="box-icon__wrapper">
-                <img src="./images/premium-icon.png" alt="" />
+          <div class="content__wrapper">
+            <div class="premium-image__wrapper">
+              <img class="premium__image" src="./images/premium-boxes.png" alt="" />
+            </div>
+            <div class="premium-content__wrapper color--pale">
+              <div class="premium-text__box">
+                <div class="box-icon__wrapper">
+                  <img src="./images/premium-icon.png" alt="" />
+                </div>
+                <div class="box-text__wrapper">
+                  <h3 class="box-text__title">Excellent quality</h3>
+                  <p>
+                    Praesent metus urna, feugiat a placerat vel, elementum at
+                    leo.
+                  </p>
+                  <p>Quisque vel fermentum ipsum. Nulla at facilisis est.</p>
+                  <p class="box-text__feature">- feature one</p>
+                  <p class="box-text__feature">- feature two</p>
+                  <p class="box-text__feature">- feature three</p>
+                </div>
               </div>
-              <div class="box-text__wrapper">
-                <h3 class="box-text__title">First feature</h3>
-                <p>
-                  Praesent metus urna, feugiat a placerat vel, elementum at
-                  leo.
-                </p>
-                <p>Quisque vel fermentum ipsum. Nulla at facilisis est.</p>
-                <p class="box-text__feature">- feature one</p>
-                <p class="box-text__feature">- feature two</p>
-                <p class="box-text__feature">- feature three</p>
+              <div class="premium-text__box">
+                <div class="box-icon__wrapper">
+                  <img src="./images/premium-icon.png" alt="" />
+                </div>
+                <div class="box-text__wrapper">
+                  <h3 class="box-text__title">Fast delivery</h3>
+                  <p>Praesent metus urna, feugiat a placerat vel</p>
+                </div>
+              </div>
+              <div class="premium-text__box">
+                <div class="box-icon__wrapper">
+                  <img src="./images/premium-icon.png" alt="" />
+                </div>
+                <div class="box-text__wrapper">
+                  <h3 class="box-text__title">Easy to pay</h3>
+                  <p>
+                    Praesent metus urna, feugiat a placerat vel, elementum at
+                    leo.
+                  </p>
+                </div>
               </div>
             </div>
-            <div class="premium-text__box">
-              <div class="box-icon__wrapper">
-                <img src="./images/premium-icon.png" alt="" />
-              </div>
-              <div class="box-text__wrapper">
-                <h3 class="box-text__title">Second feature</h3>
-                <p>Praesent metus urna, feugiat a placerat vel</p>
-              </div>
+          </div>
+          <div class="content__wrapper">
+            <div class="premium-image__wrapper">
+              <img class="premium__image" src="./images/premium-boxes.png" alt="" />
             </div>
-            <div class="premium-text__box">
-              <div class="box-icon__wrapper">
-                <img src="./images/premium-icon.png" alt="" />
+            <div class="premium-content__wrapper color--pale">
+              <div class="premium-text__box">
+                <div class="box-icon__wrapper">
+                  <img src="./images/premium-icon.png" alt="" />
+                </div>
+                <div class="box-text__wrapper">
+                  <h3 class="box-text__title">Going around the world</h3>
+                  <p>
+                    Praesent metus urna, feugiat a placerat vel, elementum at
+                    leo.
+                  </p>
+                  <p>Quisque vel fermentum ipsum. Nulla at facilisis est.</p>
+                  <p class="box-text__feature">- feature one</p>
+                  <p class="box-text__feature">- feature two</p>
+                  <p class="box-text__feature">- feature three</p>
+                </div>
               </div>
-              <div class="box-text__wrapper">
-                <h3 class="box-text__title">Third feature</h3>
-                <p>
-                  Praesent metus urna, feugiat a placerat vel, elementum at
-                  leo.
-                </p>
+              <div class="premium-text__box">
+                <div class="box-icon__wrapper">
+                  <img src="./images/premium-icon.png" alt="" />
+                </div>
+                <div class="box-text__wrapper">
+                  <h3 class="box-text__title">All countries</h3>
+                  <p>Praesent metus urna, feugiat a placerat vel</p>
+                </div>
+              </div>
+              <div class="premium-text__box">
+                <div class="box-icon__wrapper">
+                  <img src="./images/premium-icon.png" alt="" />
+                </div>
+                <div class="box-text__wrapper">
+                  <h3 class="box-text__title">All cities</h3>
+                  <p>
+                    Praesent metus urna, feugiat a placerat vel, elementum at
+                    leo.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
         <div class="premium__footer">
-          <div class="dots__wrapper">
-            <div class="dot__element"></div>
-            <div class="dot__element"></div>
-            <div class="dot__element"></div>
-          </div>
           <button class="button button--brown">Get in touch</button>
         </div>
       </div>
@@ -549,24 +651,24 @@
             </span>
           </h2>
         </div>
-        <div class="content__wrapper">
+        <div id="counter" class="content__wrapper">
           <div class="content__column facts--column">
-            <p class="facts__number color--brown">1000</p>
+            <p class="facts__number color--brown counter-value" data-count="3000">1000</p>
             <p class="section__subtitle facts--title">Design projects released</p>
             <p class="color--pale">Praesent metus urna, feugiat a placerat elementum at leo</p>
           </div>
           <div class="content__column facts--column">
-            <p class="facts__number color--brown">900</p>
+            <p class="facts__number color--brown counter-value" data-count="2700">900</p>
             <p class="section__subtitle facts--title">Photos</p>
             <p class="color--pale">Praesent metus urna, feugiat a placerat elementum at leo</p>
           </div>
           <div class="content__column facts--column">
-            <p class="facts__number color--brown">500</p>
+            <p class="facts__number color--brown counter-value" data-count="1500">500</p>
             <p class="section__subtitle facts--title">Marketing ideas</p>
             <p class="color--pale">Praesent metus urna, feugiat a placerat elementum at leo</p>
           </div>
           <div class="content__column facts--column">
-            <p class="facts__number color--brown">100</p>
+            <p class="facts__number color--brown counter-value" data-count="300">100</p>
             <p class="section__subtitle facts--title">Exhibitions</p>
             <p class="color--pale">Praesent metus urna, feugiat a placerat elementum at leo</p>
           </div>
@@ -579,31 +681,31 @@
           <img src="./images/share-icon.png" alt="">
           <p class="share__slogan color--pale">Tell about us:</p>
         </div>
-        <div class="share-icon__wrapper flex--center">
+        <div id="counter" class="share-icon__wrapper flex--center">
           <div class="icon__box flex--center">
             <a class="fab fa-twitter icon icon--twitter" href="https://twitter.com/" target="_blank">
             </a>
-            <p class="icon-box__number color--pale">152</p>
+            <p class="icon-box__number color--pale counter-value" data-count="456">152</p>
           </div>
           <div class="icon__box flex--center">
             <a class="fab fa-linkedin-in icon icon--linkedin" href="https://linkedin.com/" target="_blank">
             </a>
-            <p class="icon-box__number color--pale">31</p>
+            <p class="icon-box__number color--pale counter-value" data-count="93">31</p>
           </div>
           <div class="icon__box flex--center">
             <a class="fab fa-facebook-f icon icon--facebook" href="https://facebook.com/" target="_blank">
             </a>
-            <p class="icon-box__number color--pale">165</p>
+            <p class="icon-box__number color--pale counter-value" data-count="495">165</p>
           </div>
           <div class="icon__box flex--center">
             <a class="fab fa-google-plus-g icon icon--google" href="https://plus.google.com/" target="_blank">
             </a>
-            <p class="icon-box__number color--pale">22</p>
+            <p class="icon-box__number color--pale counter-value" data-count="66">22</p>
           </div>
           <div class="icon__box flex--center">
             <a class="fab fa-pinterest-p icon icon--pinterest" href="https://pinterest.com/" target="_blank">
             </a>
-            <p class="icon-box__number color--pale">165</p>
+            <p class="icon-box__number color--pale counter-value" data-count="495">165</p>
           </div>
         </div>
       </div>
@@ -679,6 +781,10 @@
     </footer>
   </main>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="/node_modules/bxslider/dist/jquery.bxslider.js"></script>
+
+  <script src="./js/$onScroll.js"></script>
   <script src="./js/script.js"></script>
 
 </body>

@@ -43,7 +43,7 @@ body { font-family: "Montserrat", sans-serif; color: #fff; background: #f7f7f7; 
 
 .container { max-width: 1200px; margin: 0 auto; padding: 5vh 0; }
 
-.home { background: url("../images/Home-bg.jpg") no-repeat center; background-size: cover; height: 100vh; position: relative; }
+.home { background: url("../images/Home-bg.jpg") no-repeat center; background-size: cover; background-attachment: fixed; height: 100vh; position: relative; }
 
 .home .home-nav { background: #000; }
 
@@ -113,7 +113,7 @@ body { font-family: "Montserrat", sans-serif; color: #fff; background: #f7f7f7; 
 
 .projects .box__layer { position: absolute; top: 100%; width: 100%; height: 100%; display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; text-align: center; background: #000; opacity: 0.8; font-size: 14px; }
 
-.team { min-height: 700px; background: url("../images/OurTeam-bg-.jpg") no-repeat center; background-size: cover; }
+.team { min-height: 700px; background: url("../images/OurTeam-bg-.jpg") no-repeat center; background-size: cover; background-attachment: fixed; }
 
 .team .team__column { background: #fff; margin: 20px; padding: 4vh; text-align: center; box-shadow: 0 20px 80px 0 #5a5a5a; }
 

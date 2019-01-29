@@ -136,6 +136,7 @@ body {
 .home {
   background: url("../images/Home-bg.jpg") no-repeat center;
   background-size: cover;
+  background-attachment: fixed;
   height: 100vh;
   position: relative;
 
@@ -377,6 +378,7 @@ body {
   min-height: 700px;
   background: url("../images/OurTeam-bg-.jpg") no-repeat center;
   background-size: cover;
+  background-attachment: fixed;
 
   .team__column {
     background: #fff;
