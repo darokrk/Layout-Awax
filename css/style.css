@@ -41,6 +41,14 @@ body { font-family: "Montserrat", sans-serif; color: #fff; background: #f7f7f7; 
 
 .section__subtitle { display: block; font-size: 14px; text-transform: uppercase; font-weight: bold; }
 
+.message__form { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-align: center; align-items: center; width: 100%; text-transform: uppercase; font-size: 13px; }
+
+.form__label { width: 80%; padding: 10px; }
+
+.form__input { width: 75%; border: none; border-bottom: 1px solid #aeaeae; background: inherit; text-align: center; }
+
+.form__input:focus { outline: none; border-color: #000; }
+
 .container { max-width: 1200px; margin: 0 auto; padding: 5vh 0; }
 
 .home { background: url("../images/Home-bg.jpg") no-repeat center; background-size: cover; background-attachment: fixed; height: 100vh; position: relative; }
@@ -201,14 +209,6 @@ body { font-family: "Montserrat", sans-serif; color: #fff; background: #f7f7f7; 
 
 .contact .message__wrapper { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-align: center; align-items: center; max-width: 540px; margin: 0 auto; }
 
-.contact .message__form { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-align: center; align-items: center; width: 100%; text-transform: uppercase; font-size: 13px; }
-
-.contact .form__label { width: 80%; padding: 10px; }
-
-.contact .form__input { width: 75%; border: none; border-bottom: 1px solid #aeaeae; background: inherit; text-align: center; }
-
-.contact .form__input:focus { outline: none; border-color: #000; }
-
 .contact .map__container { position: relative; }
 
 .contact .map-black-white { width: 100%; min-height: 420px; border: none; vertical-align: middle; filter: grayscale(100%); }
@@ -234,6 +234,8 @@ body { font-family: "Montserrat", sans-serif; color: #fff; background: #f7f7f7; 
 .footer .footer__wrapper .footer__box .box__email .email__text { font-size: 13px; text-transform: uppercase; margin-bottom: 0; }
 
 .footer .footer__wrapper .footer__box .box__email .email__text::after { content: ""; display: block; width: inherit; margin: 10px auto; border: 1px solid; opacity: 0.8; }
+
+.footer .footer__wrapper .footer__box .box__email .email--button { font-family: Arial; text-decoration: none; }
 
 .footer .footer__wrapper .box--text { font-size: 12px; line-height: 21px; }
 
